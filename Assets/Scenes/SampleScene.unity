@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2706,6 +2706,10 @@ MonoBehaviour:
     count: 20
   - prefabs: {fileID: 2884802217518432611, guid: 1303e0e9c383ece4ebb1d4cb7b2d057e, type: 3}
     count: 20
+  - prefabs: {fileID: 2884802217518432611, guid: 1500e56e2a1fd1f458cad5234c16b48d, type: 3}
+    count: 20
+  - prefabs: {fileID: 2884802217518432611, guid: a3ba71618416f254b9ffd5d596fe8dae, type: 3}
+    count: 20
   _towersOnScene: []
   _trans: {fileID: 976875164}
 --- !u!1 &1021002910
@@ -3880,8 +3884,8 @@ MonoBehaviour:
   - {fileID: 248033741}
   - {fileID: 1209281851}
   - {fileID: 1997358432}
-  _enemiesStartWave: 40
-  _newWave: 5
+  _enemiesStartWave: 10
+  _newWave: 10
   _timeSpawn: 1
   _timeWave: 5
 --- !u!114 &1399321751
