@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4210996426437004145}
   - component: {fileID: 2810353894503209659}
   - component: {fileID: 8077237529453884321}
+  - component: {fileID: 2911911058404233235}
   m_Layer: 7
   m_Name: EnergyPWO
   m_TagString: Untagged
@@ -108,6 +109,18 @@ MonoBehaviour:
   _bullet: {fileID: 5931965637362452973, guid: 7ad26ad458cc7b744a340ff3210e0166, type: 3}
   _timerMax: 1
   _radius: 2.93
+--- !u!114 &2911911058404233235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2884802217518432611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 545795fe66048ca458bd8414e0ca8b5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3110849839787405917
 GameObject:
   m_ObjectHideFlags: 0

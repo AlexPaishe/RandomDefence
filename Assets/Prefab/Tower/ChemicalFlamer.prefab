@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 4210996426437004145}
   - component: {fileID: 2810353894503209659}
   - component: {fileID: 8077237529453884321}
+  - component: {fileID: 1514459258309555734}
   m_Layer: 7
   m_Name: ChemicalFlamer
   m_TagString: Untagged
@@ -130,7 +131,7 @@ MonoBehaviour:
   _point: {fileID: 6927608734577969523}
   _layer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 768
   _turret: {fileID: 6764287826520733176}
   _gun:
   - {fileID: 4193350951064695601}
@@ -138,6 +139,19 @@ MonoBehaviour:
   _bullet: {fileID: 5931965637362452973, guid: 84105427eb9e7ae4b911d9a7d80fe25d, type: 3}
   _timerMax: 1
   _radius: 2.93
+--- !u!114 &1514459258309555734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2884802217518432611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4d04a21651f619468ae8a1474d9cae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 20
 --- !u!1 &4523914534912864847
 GameObject:
   m_ObjectHideFlags: 0

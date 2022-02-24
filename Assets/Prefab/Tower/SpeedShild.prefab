@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 7151060999960449034}
   - component: {fileID: 4210996426437004145}
   - component: {fileID: 2810353894503209659}
+  - component: {fileID: 5683071091507689316}
   m_Layer: 7
   m_Name: SpeedShild
   m_TagString: Untagged
@@ -164,6 +165,21 @@ MonoBehaviour:
   _stepH: 1
   _stepD: 0.3
   _tower: {fileID: 0}
+--- !u!114 &5683071091507689316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2884802217518432611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc423ae07c840564ba262f3fbed0730d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  go: 0
+  _point: {fileID: 6927608734577969523}
+  gain: 0.9
 --- !u!1 &4523914534912864847
 GameObject:
   m_ObjectHideFlags: 0

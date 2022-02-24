@@ -35,6 +35,11 @@ public class TowerSearchEnemy : MonoCache
         }
     }
 
+    public float GetMaxTimer()
+    {
+        return _timerMax;
+    }
+
     private void Awake()
     {
         _timer = _timerMax;
@@ -55,6 +60,10 @@ public class TowerSearchEnemy : MonoCache
                 {
                     _turret.LookAt(_target);
                 }
+                if (_flamer)
+                {
+                    _turret.LookAt(_target);
+                }
             }
         }
     }
@@ -70,6 +79,19 @@ public class TowerSearchEnemy : MonoCache
             if (_flamer == false)
             {
                 int targetnumber = 0;               
+                for (int i = 0; i < targets.Length; i++)
+                {
+                    if (Vector3.Distance(_gun[_muzzle].position, targets[i].transform.position) <= Vector3.Distance(_gun[_muzzle].position, targets[targetnumber].transform.position)
+                        && targets[i].GetComponent<EnemyHealth>().Health != 0)
+                    {
+                        targetnumber = i;
+                    }
+                }
+                _target = targets[targetnumber].transform;
+            }
+            if (_flamer)
+            {
+                int targetnumber = 0;
                 for (int i = 0; i < targets.Length; i++)
                 {
                     if (Vector3.Distance(_gun[_muzzle].position, targets[i].transform.position) <= Vector3.Distance(_gun[_muzzle].position, targets[targetnumber].transform.position)
@@ -100,6 +122,11 @@ public class TowerSearchEnemy : MonoCache
             {
                 _muzzle = 0;
             }
+        }
+        if (_flamer)
+        {           
+            GetComponent<Flame>().FlameThrower(Physics.OverlapBox(_gun[_muzzle].position, new Vector3(0.5f, 2f, 5), Quaternion.identity));//Magic num
+            
         }
     }
 

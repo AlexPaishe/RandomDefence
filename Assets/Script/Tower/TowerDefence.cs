@@ -60,6 +60,10 @@ public class TowerDefence : MonoCache
                 {
                     _meshs[i].material.SetFloat("_Death", _death);
                 }
+                if (TryGetComponent(out LastShotScript lastShot))
+                {
+                    lastShot.DoLastShoot();
+                }                
                 _isDeath = false;
                 transform.parent.parent.GetComponent<Cell>().Select = false;
                 gameObject.SetActive(false);
